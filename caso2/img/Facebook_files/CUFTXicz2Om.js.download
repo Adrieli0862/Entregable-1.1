@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("LSUpsertLiveLocationSharer",[],(function(a,b,c,d,e,f){function a(){var a=arguments,b=a[a.length-1],c=[];return b.sequence([function(c){return b.db.table(149).fetch([[[a[0],a[1]]]]).next().then(function(c,d){d=c.done;c=c.value;return d?b.db.table(149).put({threadKey:a[0],userId:a[1],latitude:a[2],longitude:a[3],geoTimestampMs:a[4],expirationTimestampMs:a[5]}):(c.item,b.forEach(b.db.table(149).fetch([[[a[0],a[1]]]]),function(b){var c=b.update;b.item;return c({latitude:a[2],longitude:a[3],geoTimestampMs:a[4],expirationTimestampMs:a[5]})}))})},function(a){return b.resolve(c)}])}e.exports=a}),null);

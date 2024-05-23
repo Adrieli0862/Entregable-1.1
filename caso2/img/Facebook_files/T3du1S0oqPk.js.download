@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("LSDeleteCommunityChannelCategory",["LSDeleteThread"],(function(a,b,c,d,e,f){function a(){var a=arguments,c=a[a.length-1],d=[];return c.sequence([function(d){return c.sequence([function(b){return c.forEach(c.filter(c.db.table(182).fetch(),function(b){return c.i64.eq(b.categoryId,a[0])}),function(a){return a["delete"]()})},function(d){return c.storedProcedure(b("LSDeleteThread"),a[0],!1)}])},function(a){return c.resolve(d)}])}e.exports=a}),null);
